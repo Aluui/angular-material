@@ -1,0 +1,36 @@
+<mat-toolbar
+  >This page shows the uses of buttons in Angular Material
+  <a mat-button routerLink="/demo">Back</a>
+</mat-toolbar>
+<div>
+  <header class="mat-title">This shows regular button variations</header>
+  <button mat-button>Click Me</button>
+  <button mat-raised-button>Click Me</button>
+  <button mat-flat-button>Click Me</button>
+  <button mat-stroked-button>Click Me</button>
+</div>
+
+<div>
+  <header class="mat-title">This shows circular buttons</header>
+  <button mat-icon-button>Icon</button>
+  <button mat-fab>Fab</button>
+  <button mat-mini-fab>MiniFab</button>
+</div>
+
+<div>
+  <header class="mat-title">This shows button colors on regular buttons</header>
+  <button color="primary" mat-button>Primary</button>
+  <button color="accent" mat-button>Accent</button>
+  <button color="warn" mat-button>Warn</button>
+
+  <header class="mat-title">This shows button colors on raised buttons</header>
+  <button color="primary" mat-raised-button>Primary</button>
+  <button color="accent" mat-raised-button>Accent</button>
+  <button color="warn" mat-raised-button>Warn</button>
+</div>
+
+<div>
+  <header class="mat-title">How to disable button ripple effects</header>
+  <button color="warn" mat-button>With Ripple</button>
+  <button color="warn" disableRipple mat-button>No Ripple</button>
+</div>
