@@ -8,6 +8,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 @NgModule({
   declarations: [],
   imports: [CommonModule, FormsModule, MaterialModule, FlexLayoutModule],
-  exports: [MaterialModule, FlexLayoutModule],
+  exports: [CommonModule, MaterialModule, FlexLayoutModule],
 })
 export class SharedModule {}

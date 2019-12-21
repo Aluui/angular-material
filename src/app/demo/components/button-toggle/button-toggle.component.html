@@ -1,0 +1,39 @@
+<mat-toolbar
+  >This page shows the uses of toggle-able buttons in Angular Material
+  <a mat-button routerLink="/">Back</a>
+</mat-toolbar>
+
+<div>
+  <header class="mat-title">Showing buttons that toggle</header>
+  <mat-button-toggle #toggleBtn>Toggle Button</mat-button-toggle
+  >{{ toggleBtn.checked }}
+  <mat-button-toggle disableRipple>No Ripple Toggle Button</mat-button-toggle>
+  <mat-button-toggle disabled>Disabled Toggle Button</mat-button-toggle>
+</div>
+
+<div>
+  <header class="mat-title">
+    A toggle button group - like a radion button - selects one or another
+  </header>
+  <mat-button-toggle-group #toggleGroup="matButtonToggleGroup">
+    <mat-button-toggle value="angular">Angular</mat-button-toggle>
+    <mat-button-toggle value="react">React</mat-button-toggle>
+    <mat-button-toggle value="vue">Vue</mat-button-toggle>
+  </mat-button-toggle-group>
+
+  {{ toggleGroup.value }}
+</div>
+
+<div>
+  <header class="mat-title">
+    A multi-select toggle button group - like a radion button - selects one or
+    another
+  </header>
+  <mat-button-toggle-group #toggleGroup2="matButtonToggleGroup" multiple>
+    <mat-button-toggle value="angular">Angular</mat-button-toggle>
+    <mat-button-toggle value="react">React</mat-button-toggle>
+    <mat-button-toggle value="vue">Vue</mat-button-toggle>
+  </mat-button-toggle-group>
+
+  {{ toggleGroup2.value }}
+</div>

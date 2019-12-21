@@ -13,7 +13,6 @@ import { HomeModule } from './home/home.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    SharedModule,
     HomeModule,
   ],
   providers: [],
