@@ -1,7 +1,10 @@
 # Github Pages Website
 
 URL: https://aluui.github.io/angular-material/
-Deployment command: ng build --prod --base-href angular-material && ngh
+Deployment command:
+
+- Run `ng build --prod --base-href angular-material && ngh`
+- OR `./BuildAndDeployGithubPages.sh`
 
 # AngularMaterial
 
