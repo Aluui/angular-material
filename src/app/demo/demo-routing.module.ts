@@ -5,6 +5,8 @@ import { FlexboxComponent } from './components/flexbox/flexbox.component';
 import { TypographyComponent } from './components/typography/typography.component';
 import { ButtonsComponent } from './components/buttons/buttons.component';
 import { ButtonToggleComponent } from './components/button-toggle/button-toggle.component';
+import { IconsComponent } from './components/icons/icons.component';
+import { BadgesComponent } from './components/badges/badges.component';
 
 const routes: Routes = [
   {
@@ -26,6 +28,14 @@ const routes: Routes = [
   {
     path: 'button-toggle',
     component: ButtonToggleComponent,
+  },
+  {
+    path: 'icons',
+    component: IconsComponent,
+  },
+  {
+    path: 'badges',
+    component: BadgesComponent,
   },
 ];
 
