@@ -12,9 +12,11 @@ import { IconsComponent } from './components/icons/icons.component';
 import { DemoPageHeaderComponent } from './components/demo-page-header/demo-page-header.component';
 import { BadgesComponent } from './components/badges/badges.component';
 import { ProgressSpinnerComponent } from './components/progress-spinner/progress-spinner.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
 
 @NgModule({
-  declarations: [FlexboxComponent, DashboardComponent, TypographyComponent, ButtonsComponent, ButtonToggleComponent, IconsComponent, DemoPageHeaderComponent, BadgesComponent, ProgressSpinnerComponent],
+  declarations: [FlexboxComponent, DashboardComponent, TypographyComponent, ButtonsComponent, ButtonToggleComponent, IconsComponent, DemoPageHeaderComponent, BadgesComponent, ProgressSpinnerComponent, ToolbarComponent, SidenavComponent],
   imports: [SharedModule, DemoRoutingModule],
 })
 export class DemoModule {}

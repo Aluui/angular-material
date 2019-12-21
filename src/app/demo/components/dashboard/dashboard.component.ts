@@ -41,6 +41,14 @@ export class DashboardComponent implements OnInit {
         routerLink: '/spinner',
         description: 'Go to Progress Spinner page',
       },
+      {
+        routerLink: '/toolbar',
+        description: 'Go to Toolbar page',
+      },
+      {
+        routerLink: '/sidenav',
+        description: 'Go to Sidenav page',
+      },
     ];
   }
 }

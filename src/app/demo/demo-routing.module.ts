@@ -8,6 +8,8 @@ import { ButtonToggleComponent } from './components/button-toggle/button-toggle.
 import { IconsComponent } from './components/icons/icons.component';
 import { BadgesComponent } from './components/badges/badges.component';
 import { ProgressSpinnerComponent } from './components/progress-spinner/progress-spinner.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
 
 const routes: Routes = [
   {
@@ -41,6 +43,14 @@ const routes: Routes = [
   {
     path: 'spinner',
     component: ProgressSpinnerComponent,
+  },
+  {
+    path: 'toolbar',
+    component: ToolbarComponent,
+  },
+  {
+    path: 'sidenav',
+    component: SidenavComponent,
   },
 ];
 

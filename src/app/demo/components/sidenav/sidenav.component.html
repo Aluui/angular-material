@@ -1,0 +1,34 @@
+<mat-sidenav-container [hasBackdrop]="hasBackdrop.value">
+  <mat-sidenav [mode]="sidenavMode" [(opened)]="opened"
+    >Sidenav portion</mat-sidenav
+  >
+  <mat-sidenav-content>
+    <button mat-button (click)="opened = true">
+      <mat-icon>menu</mat-icon>
+    </button>
+    Main Content
+
+    <div>
+      <button routerLink="/" mat-button>Go Back To Dashboard</button>
+    </div>
+
+    <div>
+      <header class="mat-title">Toggle Sidenav modes</header>
+      <mat-button-toggle-group>
+        <mat-button-toggle
+          *ngFor="let mode of modes"
+          [value]="mode"
+          (click)="sidenavMode = mode"
+          >{{ mode }}</mat-button-toggle
+        >
+      </mat-button-toggle-group>
+
+      <header class="mat-title">Toggle Sidenav Backdrop Modes</header>
+      <mat-select #hasBackdrop>
+        <mat-option>Unsaet</mat-option>
+        <mat-option [value]="true">True</mat-option>
+        <mat-option [value]="false">False</mat-option>
+      </mat-select>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
