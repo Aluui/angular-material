@@ -22,8 +22,19 @@
   <header class="mat-title">
     Toggle Spinner with button click
   </header>
-  <mat-spinner *ngIf="showSpinner"></mat-spinner>
+  <mat-spinner color="accent" *ngIf="showSpinner"></mat-spinner>
   <button mat-button (click)="showSpinner = !showSpinner">
     Toggle Spinner
   </button>
+</div>
+
+<div class="margin-20">
+  <header class="mat-title">
+    Shows a simple progress bar
+  </header>
+  <mat-progress-bar value="40" class="margin-20"></mat-progress-bar>
+  <mat-progress-bar value="100"></mat-progress-bar>
+
+  <header class="mat-title">Bind value to field</header>
+  <mat-progress-bar [value]="spinner"></mat-progress-bar>
 </div>
