@@ -11,9 +11,10 @@ import { ButtonToggleComponent } from './components/button-toggle/button-toggle.
 import { IconsComponent } from './components/icons/icons.component';
 import { DemoPageHeaderComponent } from './components/demo-page-header/demo-page-header.component';
 import { BadgesComponent } from './components/badges/badges.component';
+import { ProgressSpinnerComponent } from './components/progress-spinner/progress-spinner.component';
 
 @NgModule({
-  declarations: [FlexboxComponent, DashboardComponent, TypographyComponent, ButtonsComponent, ButtonToggleComponent, IconsComponent, DemoPageHeaderComponent, BadgesComponent],
+  declarations: [FlexboxComponent, DashboardComponent, TypographyComponent, ButtonsComponent, ButtonToggleComponent, IconsComponent, DemoPageHeaderComponent, BadgesComponent, ProgressSpinnerComponent],
   imports: [SharedModule, DemoRoutingModule],
 })
 export class DemoModule {}

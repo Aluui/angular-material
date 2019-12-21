@@ -37,6 +37,10 @@ export class DashboardComponent implements OnInit {
         routerLink: '/badges',
         description: 'Go to Badges page',
       },
+      {
+        routerLink: '/spinner',
+        description: 'Go to Progress Spinner page',
+      },
     ];
   }
 }
