@@ -14,9 +14,11 @@ import { BadgesComponent } from './components/badges/badges.component';
 import { ProgressSpinnerComponent } from './components/progress-spinner/progress-spinner.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { MenusComponent } from './components/menus/menus.component';
+import { LayoutElementsComponent } from './components/layout-elements/layout-elements.component';
 
 @NgModule({
-  declarations: [FlexboxComponent, DashboardComponent, TypographyComponent, ButtonsComponent, ButtonToggleComponent, IconsComponent, DemoPageHeaderComponent, BadgesComponent, ProgressSpinnerComponent, ToolbarComponent, SidenavComponent],
+  declarations: [FlexboxComponent, DashboardComponent, TypographyComponent, ButtonsComponent, ButtonToggleComponent, IconsComponent, DemoPageHeaderComponent, BadgesComponent, ProgressSpinnerComponent, ToolbarComponent, SidenavComponent, MenusComponent, LayoutElementsComponent],
   imports: [SharedModule, DemoRoutingModule],
 })
 export class DemoModule {}

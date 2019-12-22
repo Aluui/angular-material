@@ -49,6 +49,14 @@ export class DashboardComponent implements OnInit {
         routerLink: '/sidenav',
         description: 'Go to Sidenav page',
       },
+      {
+        routerLink: '/menus',
+        description: 'Go to Menus page',
+      },
+      {
+        routerLink: '/layout-components',
+        description: 'Go to Element Layouts page',
+      },
     ];
   }
 }
