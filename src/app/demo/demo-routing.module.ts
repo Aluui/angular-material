@@ -12,6 +12,7 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { MenusComponent } from './components/menus/menus.component';
 import { LayoutElementsComponent } from './components/layout-elements/layout-elements.component';
+import { GridsComponent } from './components/grids/grids.component';
 
 const routes: Routes = [
   {
@@ -61,6 +62,10 @@ const routes: Routes = [
   {
     path: 'layout-components',
     component: LayoutElementsComponent,
+  },
+  {
+    path: 'grids',
+    component: GridsComponent,
   },
 ];
 

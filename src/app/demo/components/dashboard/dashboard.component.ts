@@ -55,7 +55,11 @@ export class DashboardComponent implements OnInit {
       },
       {
         routerLink: '/layout-components',
-        description: 'Go to Element Layouts page',
+        description: 'Go to Lists page',
+      },
+      {
+        routerLink: '/grids',
+        description: 'Go to Grids page',
       },
     ];
   }
