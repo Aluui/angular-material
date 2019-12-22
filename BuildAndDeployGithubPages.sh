@@ -1,1 +1,1 @@
-ng build --prod --base-href angular-material && ngh
+ng build --prod && ngh
