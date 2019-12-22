@@ -1,0 +1,72 @@
+<app-demo-material-reference
+  linkUrl="https://material.angular.io/components/form-field/overview#error-messages"
+  linkName="Working With Error Messages"
+  toolbarColor="accent"
+></app-demo-material-reference>
+
+<div>
+  <header class="mat-title">Input Fields</header>
+  <mat-form-field>
+    Input only - no label: <input type="text" matInput />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input type="text" matInput />
+  </mat-form-field>
+
+  <mat-form-field floatLabel="never">
+    <mat-label>Never Float Label</mat-label>
+    <input type="text" matInput />
+  </mat-form-field>
+
+  <mat-form-field floatLabel="always">
+    <mat-label>Always Float Label</mat-label>
+    <input type="text" matInput />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Show required</mat-label>
+    <input type="text" matInput required />
+  </mat-form-field>
+
+  <mat-form-field hideRequiredMarker>
+    <mat-label>Hide required marker</mat-label>
+    <input type="text" matInput required />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Add a Hint</mat-label>
+    <input type="text" matInput required />
+    <mat-hint>Min 5 characters</mat-hint>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Add a Hint (Align the hint right)</mat-label>
+    <input type="text" matInput required />
+    <mat-hint align="end">Min 5 characters</mat-hint>
+  </mat-form-field>
+
+  <mat-form-field appearance="legacy">
+    <mat-label>Control the appearance (legacy)</mat-label>
+    <input type="text" matInput required />
+    <mat-hint align="end">Min 5 characters</mat-hint>
+  </mat-form-field>
+
+  <mat-form-field appearance="standard">
+    <mat-label>Control the appearance (standard)</mat-label>
+    <input type="text" matInput required />
+    <mat-hint align="end">Min 5 characters</mat-hint>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" color="accent">
+    <mat-label>Control the appearance (fill) - with accent color</mat-label>
+    <input type="text" matInput required />
+    <mat-hint align="end">Min 5 characters</mat-hint>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" color="warn">
+    <mat-label>Control the appearance (outline) - with warn color</mat-label>
+    <input type="text" matInput required />
+    <mat-hint align="end">Min 5 characters</mat-hint>
+  </mat-form-field>
+</div>
