@@ -15,6 +15,7 @@ import { LayoutElementsComponent } from './components/layout-elements/layout-ele
 import { GridsComponent } from './components/grids/grids.component';
 import { ExpansionPanelsComponent } from './components/expansion-panels/expansion-panels.component';
 import { CardsComponent } from './components/cards/cards.component';
+import { TabsComponent } from './components/tabs/tabs.component';
 
 const routes: Routes = [
   {
@@ -76,6 +77,10 @@ const routes: Routes = [
   {
     path: 'cards',
     component: CardsComponent,
+  },
+  {
+    path: 'tabs',
+    component: TabsComponent,
   },
 ];
 
