@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import {
   MatButtonModule,
+  MatBadgeModule,
   MatCheckboxModule,
   MatIconModule,
   MatInputModule,
@@ -37,6 +38,7 @@ import {
 const materialModules = [
   MatCheckboxModule,
   MatButtonModule,
+  MatBadgeModule,
   MatInputModule,
   MatAutocompleteModule,
   MatDatepickerModule,

@@ -1,0 +1,71 @@
+<app-demo-page-header
+  title="This page shows the use of Menus in Angular Material"
+></app-demo-page-header>
+
+<div>
+  <mat-menu #appMenu="matMenu">
+    <button mat-menu-item>FrontEnd</button>
+    <button mat-menu-item>BackEnd</button>
+  </mat-menu>
+
+  <button mat-flat-button [matMenuTriggerFor]="appMenu">Simple Menu</button>
+</div>
+
+<div>
+  <mat-menu #nestedMenu="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="subMenu">Angular</button>
+    <button mat-menu-item>React</button>
+    <button mat-menu-item>vue</button>
+  </mat-menu>
+
+  <mat-menu #subMenu="matMenu">
+    <button mat-menu-item>Modules</button>
+    <button mat-menu-item>Components</button>
+    <button mat-menu-item>Services</button>
+  </mat-menu>
+
+  <button mat-flat-button [matMenuTriggerFor]="nestedMenu">Nested Menu</button>
+</div>
+
+<div>
+  <mat-menu #positionedMenu="matMenu" xPosition="after" yPosition="above">
+    <button mat-menu-item [matMenuTriggerFor]="subMenu2">Angular</button>
+    <button mat-menu-item>React</button>
+    <button mat-menu-item>vue</button>
+  </mat-menu>
+
+  <mat-menu #subMenu2="matMenu">
+    <button mat-menu-item>Modules</button>
+    <button mat-menu-item>Components</button>
+    <button mat-menu-item>Services</button>
+  </mat-menu>
+
+  <button mat-flat-button [matMenuTriggerFor]="positionedMenu" class="center">
+    Positioned Menu
+  </button>
+</div>
+
+<div>
+  <mat-menu #dynamicMenu="matMenu">
+    <ng-template matMenuContent let-name="name" let-hobby="hobby">
+      <button mat-menu-item>Settings</button>
+      <button mat-menu-item>Hobby is {{ hobby }}</button>
+      <button mat-menu-item>Log Out {{ name }}</button>
+    </ng-template>
+  </mat-menu>
+
+  <button
+    mat-flat-button
+    [matMenuTriggerData]="{ name: 'Sam', hobby: 'football' }"
+    [matMenuTriggerFor]="dynamicMenu"
+  >
+    Dynamically Content Menu 1
+  </button>
+  <button
+    mat-flat-button
+    [matMenuTriggerData]="{ name: 'Bob', hobby: 'teaching' }"
+    [matMenuTriggerFor]="dynamicMenu"
+  >
+    Dynamically Content Menu 2
+  </button>
+</div>

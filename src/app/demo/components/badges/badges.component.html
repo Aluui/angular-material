@@ -1,0 +1,114 @@
+<app-demo-page-header
+  title="This page shows the uses of badges in Angular Material"
+></app-demo-page-header>
+
+<header class="mat-title">
+  Key: Overlap badges for icons not for text
+</header>
+
+<header class="mat-caption">
+  More info:
+  <a
+    target="_blank"
+    href="https://material.angular.io/components/badge/overview"
+    >Badge page</a
+  >
+</header>
+
+<p>
+  <span matBadge="4" matBadgeOverlap="false"
+    >Text with a badge - no overlap</span
+  >
+</p>
+
+<div class="badge-positions">
+  <header class="mat-title">
+    Bind Badge value to a field
+  </header>
+  <div>
+    <span [matBadge]="notifications" matBadgeColor="primary"
+      >Notifications</span
+    >
+  </div>
+</div>
+
+<div class="badge-positions">
+  <header class="mat-title">
+    Hide badge value conditionally
+  </header>
+  <div>
+    <span [matBadge]="notifications" [matBadgeHidden]="hiddenNotification === 0"
+      >Notifications</span
+    >
+  </div>
+</div>
+
+<div class="badge-positions">
+  <header class="mat-title">
+    Shows different badge positions
+  </header>
+  <div>
+    <span matBadge="4" matBadgePosition="below before">Notifications</span>
+  </div>
+  <div>
+    <span matBadge="4" matBadgePosition="below after">Notifications</span>
+  </div>
+  <div>
+    <span matBadge="4" matBadgePosition="above before">Notifications</span>
+  </div>
+  <div>
+    <span matBadge="4" matBadgePosition="above after">Notifications</span>
+  </div>
+</div>
+
+<div class="badge-positions">
+  <header class="mat-title">
+    Shows different badge sizings
+  </header>
+  <div>
+    <span matBadge="4" matBadgeSize="small">Notifications</span>
+  </div>
+  <div>
+    <span matBadge="4" matBadgeSize="medium">Notifications</span>
+  </div>
+  <div>
+    <span matBadge="4" matBadgeSize="large">Notifications</span>
+  </div>
+</div>
+
+<div class="badge-positions">
+  <header class="mat-title">
+    Shows different badge colors
+  </header>
+  <div>
+    <span matBadge="4" matBadgeColor="primary">Notifications</span>
+  </div>
+  <div>
+    <span matBadge="4" matBadgeColor="accent">Notifications</span>
+  </div>
+  <div>
+    <span matBadge="4" matBadgeColor="warn">Notifications</span>
+  </div>
+</div>
+
+<p>
+  Button with a badge on the left
+  <button
+    mat-raised-button
+    color="primary"
+    matBadge="8"
+    matBadgePosition="before"
+    matBadgeColor="accent"
+  >
+    Action
+  </button>
+</p>
+
+<p>
+  Icon with a badge
+  <mat-icon matBadge="15" matBadgeColor="warn">home</mat-icon>
+  <!-- Include text description of the icon's meaning for screen-readers -->
+  <span class="cdk-visually-hidden">
+    Example with a home icon with overlaid badge showing the number 15
+  </span>
+</p>

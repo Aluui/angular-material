@@ -1,0 +1,40 @@
+<app-demo-page-header
+  title="This page shows the uses of progress spinners in Angular Material"
+></app-demo-page-header>
+
+<div>
+  <header class="mat-title">
+    Shows a simple progress spinner
+  </header>
+  <mat-progress-spinner value="40"></mat-progress-spinner>
+  <mat-progress-spinner value="100"></mat-progress-spinner>
+
+  <header class="mat-title">Bind value to field</header>
+  <mat-progress-spinner [value]="spinner"></mat-progress-spinner>
+</div>
+
+<div>
+  <header class="mat-title">
+    Shows an indeterminate progress spinner
+  </header>
+  <mat-spinner></mat-spinner>
+
+  <header class="mat-title">
+    Toggle Spinner with button click
+  </header>
+  <mat-spinner color="accent" *ngIf="showSpinner"></mat-spinner>
+  <button mat-button (click)="showSpinner = !showSpinner">
+    Toggle Spinner
+  </button>
+</div>
+
+<div class="margin-20">
+  <header class="mat-title">
+    Shows a simple progress bar
+  </header>
+  <mat-progress-bar value="40" class="margin-20"></mat-progress-bar>
+  <mat-progress-bar value="100"></mat-progress-bar>
+
+  <header class="mat-title">Bind value to field</header>
+  <mat-progress-bar [value]="spinner"></mat-progress-bar>
+</div>

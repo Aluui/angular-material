@@ -1,0 +1,19 @@
+<app-demo-page-header
+  title="This page shows Tabs used in Angular Material"
+></app-demo-page-header>
+<div>
+  <header class="mat-title">Simple Tabs</header>
+  <mat-tab-group>
+    <mat-tab label="Angular">Angular</mat-tab>
+    <mat-tab label="React">React</mat-tab>
+    <mat-tab label="Vue">Vue</mat-tab>
+  </mat-tab-group>
+
+  <header class="mat-title">Get Active Tab</header>
+  <mat-tab-group #tabRef (selectedTabChange)="logChange(tabRef.selectedIndex)">
+    <mat-tab label="Angular">Angular</mat-tab>
+    <mat-tab label="React">React</mat-tab>
+    <mat-tab label="Vue">Vue</mat-tab>
+  </mat-tab-group>
+  {{ tabRef.selectedIndex }}
+</div>
