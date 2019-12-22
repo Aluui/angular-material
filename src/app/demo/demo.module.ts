@@ -18,9 +18,11 @@ import { MenusComponent } from './components/menus/menus.component';
 import { LayoutElementsComponent } from './components/layout-elements/layout-elements.component';
 import { GridsComponent } from './components/grids/grids.component';
 import { ExpansionPanelsComponent } from './components/expansion-panels/expansion-panels.component';
+import { CardsComponent } from './components/cards/cards.component';
+import { DemoMaterialReferenceComponent } from './components/demo-material-reference/demo-material-reference.component';
 
 @NgModule({
-  declarations: [FlexboxComponent, DashboardComponent, TypographyComponent, ButtonsComponent, ButtonToggleComponent, IconsComponent, DemoPageHeaderComponent, BadgesComponent, ProgressSpinnerComponent, ToolbarComponent, SidenavComponent, MenusComponent, LayoutElementsComponent, GridsComponent, ExpansionPanelsComponent],
+  declarations: [FlexboxComponent, DashboardComponent, TypographyComponent, ButtonsComponent, ButtonToggleComponent, IconsComponent, DemoPageHeaderComponent, BadgesComponent, ProgressSpinnerComponent, ToolbarComponent, SidenavComponent, MenusComponent, LayoutElementsComponent, GridsComponent, ExpansionPanelsComponent, CardsComponent, DemoMaterialReferenceComponent],
   imports: [SharedModule, DemoRoutingModule],
 })
 export class DemoModule {}

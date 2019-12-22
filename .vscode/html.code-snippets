@@ -1,0 +1,22 @@
+{
+  "Starter Demo Page": {
+    "prefix": "starter-demo-page",
+    "body": [
+      "<app-demo-page-header title=\"This page shows the $pageTitle used in Angular Material\"",
+      "></app-demo-page-header>",
+
+      "<div>",
+      "<header class=\"mat-title\">$header</header>",
+      "$end",
+      "</div>"
+    ],
+    "description": "The starter page for every demo component"
+  },
+  "Angular Material Reference Component": {
+    "prefix": "angular-material-reference",
+    "body": [
+      "<app-demo-material-reference linkUrl=\"$url\" linkName=\"$name\" toolbarColor=\"$color\"></app-demo-material-reference>"
+    ],
+    "description": "Renders the angular material page link nicely in a colored toolbar"
+  }
+}

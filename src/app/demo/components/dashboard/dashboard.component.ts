@@ -65,6 +65,10 @@ export class DashboardComponent implements OnInit {
         routerLink: '/expansion-panels',
         description: 'Go to Expansion Panels and Accordions page',
       },
+      {
+        routerLink: '/cards',
+        description: 'Go to Cards page',
+      },
     ];
   }
 }

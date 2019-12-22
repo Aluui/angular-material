@@ -14,6 +14,7 @@ import { MenusComponent } from './components/menus/menus.component';
 import { LayoutElementsComponent } from './components/layout-elements/layout-elements.component';
 import { GridsComponent } from './components/grids/grids.component';
 import { ExpansionPanelsComponent } from './components/expansion-panels/expansion-panels.component';
+import { CardsComponent } from './components/cards/cards.component';
 
 const routes: Routes = [
   {
@@ -71,6 +72,10 @@ const routes: Routes = [
   {
     path: 'expansion-panels',
     component: ExpansionPanelsComponent,
+  },
+  {
+    path: 'cards',
+    component: CardsComponent,
   },
 ];
 
