@@ -24,9 +24,10 @@ import { TabsComponent } from './components/tabs/tabs.component';
 import { StepperComponent } from './components/stepper/stepper.component';
 import { FormFieldsComponent } from './components/form-fields/form-fields.component';
 import { InputFieldsComponent } from './components/input-fields/input-fields.component';
+import { MaterialSelectComponent } from './components/material-select/material-select.component';
 
 @NgModule({
-  declarations: [FlexboxComponent, DashboardComponent, TypographyComponent, ButtonsComponent, ButtonToggleComponent, IconsComponent, DemoPageHeaderComponent, BadgesComponent, ProgressSpinnerComponent, ToolbarComponent, SidenavComponent, MenusComponent, LayoutElementsComponent, GridsComponent, ExpansionPanelsComponent, CardsComponent, DemoMaterialReferenceComponent, TabsComponent, StepperComponent, FormFieldsComponent, InputFieldsComponent],
+  declarations: [FlexboxComponent, DashboardComponent, TypographyComponent, ButtonsComponent, ButtonToggleComponent, IconsComponent, DemoPageHeaderComponent, BadgesComponent, ProgressSpinnerComponent, ToolbarComponent, SidenavComponent, MenusComponent, LayoutElementsComponent, GridsComponent, ExpansionPanelsComponent, CardsComponent, DemoMaterialReferenceComponent, TabsComponent, StepperComponent, FormFieldsComponent, InputFieldsComponent, MaterialSelectComponent],
   imports: [SharedModule, DemoRoutingModule],
 })
 export class DemoModule {}
