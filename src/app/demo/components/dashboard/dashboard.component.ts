@@ -73,6 +73,10 @@ export class DashboardComponent implements OnInit {
         routerLink: '/tabs',
         description: 'Go to Tabs page',
       },
+      {
+        routerLink: '/stepper',
+        description: 'Go to Stepper page',
+      },
     ];
   }
 }

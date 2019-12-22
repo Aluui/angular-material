@@ -16,6 +16,7 @@ import { GridsComponent } from './components/grids/grids.component';
 import { ExpansionPanelsComponent } from './components/expansion-panels/expansion-panels.component';
 import { CardsComponent } from './components/cards/cards.component';
 import { TabsComponent } from './components/tabs/tabs.component';
+import { StepperComponent } from './components/stepper/stepper.component';
 
 const routes: Routes = [
   {
@@ -81,6 +82,10 @@ const routes: Routes = [
   {
     path: 'tabs',
     component: TabsComponent,
+  },
+  {
+    path: 'stepper',
+    component: StepperComponent,
   },
 ];
 
