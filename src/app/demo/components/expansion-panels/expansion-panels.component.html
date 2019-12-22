@@ -1,0 +1,110 @@
+<app-demo-page-header
+  title="This page shows the Expansion Panels and Accordions used in Angular Material"
+></app-demo-page-header>
+
+<mat-toolbar color="accent">
+  See
+  <a
+    target="_blank"
+    mat-button
+    href="https://material.angular.io/components/expansion/api"
+    >Accordion Methods</a
+  >
+  for more info
+</mat-toolbar>
+<div>
+  <header class="mat-title">
+    Basic Expansion Panel with a title, description, body, and action buttons
+  </header>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>Angular Material Fundamentals</mat-panel-title>
+      <mat-panel-description>Total Duration: 12 Hours</mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>This is the panel content. Add course details</p>
+    <mat-action-row>
+      <button mat-button>Enroll</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+
+  <header class="mat-title">
+    Accordion (just converts panels to an accordion)
+  </header>
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>Angular Material Panel 1</mat-panel-title>
+        <mat-panel-description>Total Duration: 2 Hours</mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>This is the panel content. Add course 1 details</p>
+      <mat-action-row>
+        <button mat-button>Enroll</button>
+      </mat-action-row>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>Angular Material Panel 2</mat-panel-title>
+        <mat-panel-description>Total Duration: 12 Hours</mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>This is the panel content. Add course 2 details</p>
+      <mat-action-row>
+        <button mat-button>Enroll</button>
+      </mat-action-row>
+    </mat-expansion-panel>
+  </mat-accordion>
+
+  <header class="mat-title">
+    Accordion - open multiple panels at once
+  </header>
+  <mat-accordion multi="true">
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>Angular Material Panel 1</mat-panel-title>
+        <mat-panel-description>Total Duration: 2 Hours</mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>This is the panel content. Add course 1 details</p>
+      <mat-action-row>
+        <button mat-button>Enroll</button>
+      </mat-action-row>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>Angular Material Panel 2</mat-panel-title>
+        <mat-panel-description>Total Duration: 12 Hours</mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>This is the panel content. Add course 2 details</p>
+      <mat-action-row>
+        <button mat-button>Enroll</button>
+      </mat-action-row>
+    </mat-expansion-panel>
+  </mat-accordion>
+
+  <header class="mat-title">
+    Accordion - hide toggle icon
+  </header>
+  <mat-accordion multi="true" hideToggle>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>Angular Material Panel 1</mat-panel-title>
+        <mat-panel-description>Total Duration: 2 Hours</mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>This is the panel content. Add course 1 details</p>
+      <mat-action-row>
+        <button mat-button>Enroll</button>
+      </mat-action-row>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>Angular Material Panel 2</mat-panel-title>
+        <mat-panel-description>Total Duration: 12 Hours</mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>This is the panel content. Add course 2 details</p>
+      <mat-action-row>
+        <button mat-button>Enroll</button>
+      </mat-action-row>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>

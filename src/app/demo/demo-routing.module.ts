@@ -13,6 +13,7 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { MenusComponent } from './components/menus/menus.component';
 import { LayoutElementsComponent } from './components/layout-elements/layout-elements.component';
 import { GridsComponent } from './components/grids/grids.component';
+import { ExpansionPanelsComponent } from './components/expansion-panels/expansion-panels.component';
 
 const routes: Routes = [
   {
@@ -66,6 +67,10 @@ const routes: Routes = [
   {
     path: 'grids',
     component: GridsComponent,
+  },
+  {
+    path: 'expansion-panels',
+    component: ExpansionPanelsComponent,
   },
 ];
 
