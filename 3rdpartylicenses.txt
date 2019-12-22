@@ -114,11 +114,21 @@ THE SOFTWARE.
 
 @angular/material/button-toggle
 
+@angular/material/core
+
 @angular/material/datepicker
 
 @angular/material/dialog
 
 @angular/material/icon
+
+@angular/material/menu
+
+@angular/material/progress-bar
+
+@angular/material/progress-spinner
+
+@angular/material/select
 
 @angular/material/sidenav
 
