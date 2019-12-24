@@ -28,9 +28,11 @@ import { MaterialSelectComponent } from './components/material-select/material-s
 import { AutocompleteComponent } from './components/autocomplete/autocomplete.component';
 import { CheckboxRadioButtonsComponent } from './components/checkbox-radio-buttons/checkbox-radio-buttons.component';
 import { DatePickerComponent } from './components/date-picker/date-picker.component';
+import { TooltipComponent } from './components/tooltip/tooltip.component';
+import { SnackbarComponent } from './components/snackbar/snackbar.component';
 
 @NgModule({
-  declarations: [FlexboxComponent, DashboardComponent, TypographyComponent, ButtonsComponent, ButtonToggleComponent, IconsComponent, DemoPageHeaderComponent, BadgesComponent, ProgressSpinnerComponent, ToolbarComponent, SidenavComponent, MenusComponent, LayoutElementsComponent, GridsComponent, ExpansionPanelsComponent, CardsComponent, DemoMaterialReferenceComponent, TabsComponent, StepperComponent, FormFieldsComponent, InputFieldsComponent, MaterialSelectComponent, AutocompleteComponent, CheckboxRadioButtonsComponent, DatePickerComponent],
+  declarations: [FlexboxComponent, DashboardComponent, TypographyComponent, ButtonsComponent, ButtonToggleComponent, IconsComponent, DemoPageHeaderComponent, BadgesComponent, ProgressSpinnerComponent, ToolbarComponent, SidenavComponent, MenusComponent, LayoutElementsComponent, GridsComponent, ExpansionPanelsComponent, CardsComponent, DemoMaterialReferenceComponent, TabsComponent, StepperComponent, FormFieldsComponent, InputFieldsComponent, MaterialSelectComponent, AutocompleteComponent, CheckboxRadioButtonsComponent, DatePickerComponent, TooltipComponent, SnackbarComponent],
   imports: [SharedModule, DemoRoutingModule],
 })
 export class DemoModule {}
