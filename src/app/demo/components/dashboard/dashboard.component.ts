@@ -77,6 +77,14 @@ export class DashboardComponent implements OnInit {
         routerLink: '/stepper',
         description: 'Go to Stepper page',
       },
+      {
+        routerLink: '/form-fields',
+        description: 'Go to Form Fields page',
+      },
+      {
+        routerLink: '/virtual-scrolling',
+        description: 'Go to Virtual Scrolling page',
+      },
     ];
   }
 }

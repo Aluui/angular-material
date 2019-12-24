@@ -1,0 +1,51 @@
+<div>
+  <header class="mat-title">Select List</header>
+
+  <mat-form-field>
+    <mat-label>Topic</mat-label>
+    <mat-select [(value)]="selectedValue">
+      <mat-option>None</mat-option>
+      <mat-option value="angular">Angular</mat-option>
+      <mat-option value="react">React</mat-option>
+      <mat-option value="vue">Vue</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  {{ selectedValue }}
+
+  <header class="mat-title">Grouping options within Select List</header>
+
+  <mat-form-field>
+    <mat-label>Grouped Topics</mat-label>
+    <mat-select [(value)]="selectedValue">
+      <mat-option>None</mat-option>
+      <mat-optgroup label="Web">
+        <mat-option value="angular">Angular</mat-option>
+        <mat-option value="react">React</mat-option>
+        <mat-option value="vue">Vue</mat-option>
+      </mat-optgroup>
+      <mat-optgroup label="Mobile">
+        <mat-option value="ionic">Ionic</mat-option>
+        <mat-option value="reactnative">React Native</mat-option>
+      </mat-optgroup>
+    </mat-select>
+  </mat-form-field>
+
+  <header class="mat-title">Multiple selections within Select List</header>
+
+  <mat-form-field>
+    <mat-label>Grouped Topics</mat-label>
+    <mat-select [(value)]="selectedValue" multiple>
+      <mat-option>None</mat-option>
+      <mat-optgroup label="Web">
+        <mat-option value="angular">Angular</mat-option>
+        <mat-option value="react">React</mat-option>
+        <mat-option value="vue">Vue</mat-option>
+      </mat-optgroup>
+      <mat-optgroup label="Mobile">
+        <mat-option value="ionic">Ionic</mat-option>
+        <mat-option value="reactnative">React Native</mat-option>
+      </mat-optgroup>
+    </mat-select>
+  </mat-form-field>
+</div>

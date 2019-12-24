@@ -1,0 +1,36 @@
+<div>
+  <header class="mat-title">Snackbar</header>
+  <button mat-raised-button mat-button (click)="showSnackbar('Item Deleted')">
+    Show Simple Snackbar
+  </button>
+
+  <header class="mat-title">Snackbar with action</header>
+  <button
+    mat-raised-button
+    mat-button
+    (click)="showSnackbarWithAction('Item Deleted', 'Dismiss')"
+  >
+    Show Snackbar with action button
+  </button>
+
+  <header class="mat-title">Snackbar with autodismiss</header>
+  <button
+    mat-raised-button
+    mat-button
+    (click)="showSnackbarWithAutoDismiss('Item Deleted', 'Dismiss')"
+  >
+    Show Snackbar with action button
+  </button>
+
+  <header class="mat-title">
+    Snackbar: OpenFromComponent - Creates and opens a snackbar with a component
+    as its content
+  </header>
+  <button
+    mat-raised-button
+    mat-button
+    (click)="showSnackbarCreateFromComponent()"
+  >
+    Show Snackbar Create From Component
+  </button>
+</div>

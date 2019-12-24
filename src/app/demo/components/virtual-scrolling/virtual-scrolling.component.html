@@ -1,0 +1,12 @@
+<app-demo-page-header
+  title="This page shows the Virtual Scrolling used in Angular Material"
+></app-demo-page-header>
+<div>
+  <header class="mat-title">Virtual scrolling</header>
+
+  <cdk-virtual-scroll-viewport class="container" itemSize="100">
+    <div class="number" *cdkVirtualFor="let num of longArray">
+      {{ num }}
+    </div>
+  </cdk-virtual-scroll-viewport>
+</div>

@@ -1,0 +1,69 @@
+<header class="mat-title">A basic data table</header>
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <!--- Note that these columns can be defined in any order.
+        The actual rendered columns are set as a property on the row definition" -->
+
+  <!-- Position Column -->
+  <ng-container *ngFor="let field of displayedColumns" [matColumnDef]="field">
+    <th mat-header-cell *matHeaderCellDef>{{ field }}</th>
+    <td mat-cell *matCellDef="let element">{{ element[field] }}</td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+</table>
+
+<header class="mat-title">
+  Hide certain columns by modifying display columns array
+</header>
+<table mat-table [dataSource]="dataSource2" class="mat-elevation-z8">
+  <!--- Note that these columns can be defined in any order.
+        The actual rendered columns are set as a property on the row definition" -->
+
+  <!-- Position Column -->
+  <ng-container *ngFor="let field of subsetOfColumns" [matColumnDef]="field">
+    <th mat-header-cell *matHeaderCellDef>{{ field }}</th>
+    <td mat-cell *matCellDef="let element">{{ element[field] }}</td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="subsetOfColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: subsetOfColumns"></tr>
+</table>
+
+<header class="mat-title">
+  Re-order columns by changing the order in the display columns array
+</header>
+<table mat-table [dataSource]="dataSource3" class="mat-elevation-z8">
+  <!--- Note that these columns can be defined in any order.
+        The actual rendered columns are set as a property on the row definition" -->
+
+  <!-- Position Column -->
+  <ng-container *ngFor="let field of subsetOfColumns2" [matColumnDef]="field">
+    <th mat-header-cell *matHeaderCellDef>{{ field }}</th>
+    <td mat-cell *matCellDef="let element">{{ element[field] }}</td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="subsetOfColumns2"></tr>
+  <tr mat-row *matRowDef="let row; columns: subsetOfColumns2"></tr>
+</table>
+
+<header class="mat-title">
+  Handle Actions for each row (in this case, log to console on row click)
+</header>
+<table mat-table [dataSource]="dataSource4" class="mat-elevation-z8">
+  <!--- Note that these columns can be defined in any order.
+        The actual rendered columns are set as a property on the row definition" -->
+
+  <!-- Position Column -->
+  <ng-container *ngFor="let field of subsetOfColumns4" [matColumnDef]="field">
+    <th mat-header-cell *matHeaderCellDef>{{ field }}</th>
+    <td mat-cell *matCellDef="let element">{{ element[field] }}</td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="subsetOfColumns4"></tr>
+  <tr
+    mat-row
+    (click)="handleRowData(row)"
+    *matRowDef="let row; columns: subsetOfColumns4"
+  ></tr>
+</table>

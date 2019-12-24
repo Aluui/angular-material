@@ -17,6 +17,8 @@ import { ExpansionPanelsComponent } from './components/expansion-panels/expansio
 import { CardsComponent } from './components/cards/cards.component';
 import { TabsComponent } from './components/tabs/tabs.component';
 import { StepperComponent } from './components/stepper/stepper.component';
+import { FormFieldsComponent } from './components/form-fields/form-fields.component';
+import { VirtualScrollingComponent } from './components/virtual-scrolling/virtual-scrolling.component';
 
 const routes: Routes = [
   {
@@ -86,6 +88,14 @@ const routes: Routes = [
   {
     path: 'stepper',
     component: StepperComponent,
+  },
+  {
+    path: 'form-fields',
+    component: FormFieldsComponent,
+  },
+  {
+    path: 'virtual-scrolling',
+    component: VirtualScrollingComponent,
   },
 ];
 

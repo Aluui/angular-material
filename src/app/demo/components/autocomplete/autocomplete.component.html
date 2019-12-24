@@ -1,0 +1,46 @@
+<div>
+  <header class="mat-title">Basic Autocomplete</header>
+
+  <mat-form-field>
+    <input type="text" matInput [matAutocomplete]="auto" />
+    <mat-autocomplete #auto>
+      <mat-option *ngFor="let option of options" [value]="option">
+        {{ option }}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+  <!-- <form>
+  </form> -->
+
+  <header class="mat-title">Autocomplete with complex object</header>
+
+  <mat-form-field>
+    <input type="text" matInput [matAutocomplete]="auto" />
+    <mat-autocomplete #auto>
+      <mat-option *ngFor="let option of objectOptions" [value]="option.name">
+        {{ option.name }}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+  <!-- <form>
+  </form> -->
+
+  <header class="mat-title">Filtered Autocomplete</header>
+
+  <mat-form-field>
+    <input
+      type="text"
+      matInput
+      [matAutocomplete]="auto"
+      [formControl]="myControl"
+    />
+    <mat-autocomplete #auto>
+      <mat-option
+        *ngFor="let option of filteredOptions | async"
+        [value]="option"
+      >
+        {{ option }}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</div>

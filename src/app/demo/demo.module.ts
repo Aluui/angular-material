@@ -22,9 +22,56 @@ import { CardsComponent } from './components/cards/cards.component';
 import { DemoMaterialReferenceComponent } from './components/demo-material-reference/demo-material-reference.component';
 import { TabsComponent } from './components/tabs/tabs.component';
 import { StepperComponent } from './components/stepper/stepper.component';
+import { FormFieldsComponent } from './components/form-fields/form-fields.component';
+import { InputFieldsComponent } from './components/input-fields/input-fields.component';
+import { MaterialSelectComponent } from './components/material-select/material-select.component';
+import { AutocompleteComponent } from './components/autocomplete/autocomplete.component';
+import { CheckboxRadioButtonsComponent } from './components/checkbox-radio-buttons/checkbox-radio-buttons.component';
+import { DatePickerComponent } from './components/date-picker/date-picker.component';
+import { TooltipComponent } from './components/tooltip/tooltip.component';
+import { SnackbarComponent } from './components/snackbar/snackbar.component';
+import { DialogsComponent } from './components/dialogs/dialogs.component';
+import { DialogExampleComponent } from './components/dialog-example/dialog-example.component';
+import { DatatableComponent } from './components/datatable/datatable.component';
+import { DatatableOperationsComponent } from './components/datatable-operations/datatable-operations.component';
+import { VirtualScrollingComponent } from './components/virtual-scrolling/virtual-scrolling.component';
 
 @NgModule({
-  declarations: [FlexboxComponent, DashboardComponent, TypographyComponent, ButtonsComponent, ButtonToggleComponent, IconsComponent, DemoPageHeaderComponent, BadgesComponent, ProgressSpinnerComponent, ToolbarComponent, SidenavComponent, MenusComponent, LayoutElementsComponent, GridsComponent, ExpansionPanelsComponent, CardsComponent, DemoMaterialReferenceComponent, TabsComponent, StepperComponent],
+  declarations: [
+    FlexboxComponent,
+    DashboardComponent,
+    TypographyComponent,
+    ButtonsComponent,
+    ButtonToggleComponent,
+    IconsComponent,
+    DemoPageHeaderComponent,
+    BadgesComponent,
+    ProgressSpinnerComponent,
+    ToolbarComponent,
+    SidenavComponent,
+    MenusComponent,
+    LayoutElementsComponent,
+    GridsComponent,
+    ExpansionPanelsComponent,
+    CardsComponent,
+    DemoMaterialReferenceComponent,
+    TabsComponent,
+    StepperComponent,
+    FormFieldsComponent,
+    InputFieldsComponent,
+    MaterialSelectComponent,
+    AutocompleteComponent,
+    CheckboxRadioButtonsComponent,
+    DatePickerComponent,
+    TooltipComponent,
+    SnackbarComponent,
+    DialogsComponent,
+    DialogExampleComponent,
+    DatatableComponent,
+    DatatableOperationsComponent,
+    VirtualScrollingComponent,
+  ],
   imports: [SharedModule, DemoRoutingModule],
+  entryComponents: [DialogExampleComponent],
 })
 export class DemoModule {}
