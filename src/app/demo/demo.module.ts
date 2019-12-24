@@ -34,6 +34,7 @@ import { DialogsComponent } from './components/dialogs/dialogs.component';
 import { DialogExampleComponent } from './components/dialog-example/dialog-example.component';
 import { DatatableComponent } from './components/datatable/datatable.component';
 import { DatatableOperationsComponent } from './components/datatable-operations/datatable-operations.component';
+import { VirtualScrollingComponent } from './components/virtual-scrolling/virtual-scrolling.component';
 
 @NgModule({
   declarations: [
@@ -68,6 +69,7 @@ import { DatatableOperationsComponent } from './components/datatable-operations/
     DialogExampleComponent,
     DatatableComponent,
     DatatableOperationsComponent,
+    VirtualScrollingComponent,
   ],
   imports: [SharedModule, DemoRoutingModule],
   entryComponents: [DialogExampleComponent],

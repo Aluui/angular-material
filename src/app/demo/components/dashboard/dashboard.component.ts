@@ -81,6 +81,10 @@ export class DashboardComponent implements OnInit {
         routerLink: '/form-fields',
         description: 'Go to Form Fields page',
       },
+      {
+        routerLink: '/virtual-scrolling',
+        description: 'Go to Virtual Scrolling page',
+      },
     ];
   }
 }
