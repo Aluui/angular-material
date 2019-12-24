@@ -1,0 +1,28 @@
+<div>
+  <header class="mat-title">Dialogs</header>
+
+  <button mat-button mat-raised-button (click)="openDialog()">
+    Open Simple Dialog and display a component
+  </button>
+
+  <header class="mat-title">
+    Dialog with specific dialog formatted component (DialogExampleComponent)
+  </header>
+
+  <span
+    >Note that the dialog example component must be added to the entry
+    components for the module it is defined in</span
+  >
+  <br />
+  <button mat-button mat-raised-button (click)="openDialogExample()">
+    Open a dialog component formatted to be a dialog
+  </button>
+
+  <header class="mat-title">
+    Passing data into the dialog component
+  </header>
+
+  <button mat-button mat-raised-button (click)="openDialogExampleWithData()">
+    Open a dialog component and pass in data
+  </button>
+</div>
