@@ -32,6 +32,8 @@ import { TooltipComponent } from './components/tooltip/tooltip.component';
 import { SnackbarComponent } from './components/snackbar/snackbar.component';
 import { DialogsComponent } from './components/dialogs/dialogs.component';
 import { DialogExampleComponent } from './components/dialog-example/dialog-example.component';
+import { DatatableComponent } from './components/datatable/datatable.component';
+import { DatatableOperationsComponent } from './components/datatable-operations/datatable-operations.component';
 
 @NgModule({
   declarations: [
@@ -64,6 +66,8 @@ import { DialogExampleComponent } from './components/dialog-example/dialog-examp
     SnackbarComponent,
     DialogsComponent,
     DialogExampleComponent,
+    DatatableComponent,
+    DatatableOperationsComponent,
   ],
   imports: [SharedModule, DemoRoutingModule],
   entryComponents: [DialogExampleComponent],
