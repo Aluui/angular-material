@@ -26,9 +26,11 @@ import { FormFieldsComponent } from './components/form-fields/form-fields.compon
 import { InputFieldsComponent } from './components/input-fields/input-fields.component';
 import { MaterialSelectComponent } from './components/material-select/material-select.component';
 import { AutocompleteComponent } from './components/autocomplete/autocomplete.component';
+import { CheckboxRadioButtonsComponent } from './components/checkbox-radio-buttons/checkbox-radio-buttons.component';
+import { DatePickerComponent } from './components/date-picker/date-picker.component';
 
 @NgModule({
-  declarations: [FlexboxComponent, DashboardComponent, TypographyComponent, ButtonsComponent, ButtonToggleComponent, IconsComponent, DemoPageHeaderComponent, BadgesComponent, ProgressSpinnerComponent, ToolbarComponent, SidenavComponent, MenusComponent, LayoutElementsComponent, GridsComponent, ExpansionPanelsComponent, CardsComponent, DemoMaterialReferenceComponent, TabsComponent, StepperComponent, FormFieldsComponent, InputFieldsComponent, MaterialSelectComponent, AutocompleteComponent],
+  declarations: [FlexboxComponent, DashboardComponent, TypographyComponent, ButtonsComponent, ButtonToggleComponent, IconsComponent, DemoPageHeaderComponent, BadgesComponent, ProgressSpinnerComponent, ToolbarComponent, SidenavComponent, MenusComponent, LayoutElementsComponent, GridsComponent, ExpansionPanelsComponent, CardsComponent, DemoMaterialReferenceComponent, TabsComponent, StepperComponent, FormFieldsComponent, InputFieldsComponent, MaterialSelectComponent, AutocompleteComponent, CheckboxRadioButtonsComponent, DatePickerComponent],
   imports: [SharedModule, DemoRoutingModule],
 })
 export class DemoModule {}

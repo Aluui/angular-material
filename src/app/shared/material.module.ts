@@ -33,6 +33,7 @@ import {
   MatTableModule,
   MatSortModule,
   MatPaginatorModule,
+  MatNativeDateModule,
 } from '@angular/material';
 
 const materialModules = [
@@ -42,6 +43,7 @@ const materialModules = [
   MatInputModule,
   MatAutocompleteModule,
   MatDatepickerModule,
+  MatNativeDateModule,
   MatFormFieldModule,
   MatRadioModule,
   MatSelectModule,

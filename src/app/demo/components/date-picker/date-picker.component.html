@@ -1,0 +1,72 @@
+<div>
+  <header class="mat-title">Date Picker</header>
+
+  <mat-form-field>
+    <input type="text" matInput [matDatepicker]="myDatePicker" />
+    <mat-datepicker-toggle
+      matSuffix
+      [for]="myDatePicker"
+    ></mat-datepicker-toggle>
+    <mat-datepicker #myDatePicker></mat-datepicker>
+  </mat-form-field>
+
+  <header class="mat-title">
+    Date Picker change start view to year
+  </header>
+
+  <mat-form-field>
+    <input type="text" matInput [matDatepicker]="myDatePicker1" />
+    <mat-datepicker-toggle
+      matSuffix
+      [for]="myDatePicker1"
+    ></mat-datepicker-toggle>
+    <mat-datepicker #myDatePicker1 startView="year"></mat-datepicker>
+  </mat-form-field>
+
+  <header class="mat-title">
+    Date Picker change start view to multiyear
+  </header>
+  <mat-form-field>
+    <input type="text" matInput [matDatepicker]="myDatePicker2" />
+    <mat-datepicker-toggle
+      matSuffix
+      [for]="myDatePicker2"
+    ></mat-datepicker-toggle>
+    <mat-datepicker #myDatePicker2 startView="multiyear"></mat-datepicker>
+  </mat-form-field>
+
+  <header class="mat-title">
+    Date Picker with min and max date
+  </header>
+  <mat-form-field>
+    <input
+      type="text"
+      matInput
+      [matDatepicker]="myDatePicker3"
+      [min]="minDate"
+      [max]="maxDate"
+    />
+    <mat-datepicker-toggle
+      matSuffix
+      [for]="myDatePicker3"
+    ></mat-datepicker-toggle>
+    <mat-datepicker #myDatePicker3></mat-datepicker>
+  </mat-form-field>
+
+  <header class="mat-title">
+    Date Picker with filtered out dates (no weekends allowed)
+  </header>
+  <mat-form-field>
+    <input
+      type="text"
+      matInput
+      [matDatepicker]="myDatePicker4"
+      [matDatepickerFilter]="dateFilter"
+    />
+    <mat-datepicker-toggle
+      matSuffix
+      [for]="myDatePicker4"
+    ></mat-datepicker-toggle>
+    <mat-datepicker #myDatePicker4></mat-datepicker>
+  </mat-form-field>
+</div>
