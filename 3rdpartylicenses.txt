@@ -118,6 +118,8 @@ THE SOFTWARE.
 
 @angular/material/card
 
+@angular/material/checkbox
+
 @angular/material/core
 
 @angular/material/datepicker
@@ -142,6 +144,8 @@ THE SOFTWARE.
 
 @angular/material/progress-spinner
 
+@angular/material/radio
+
 @angular/material/select
 
 @angular/material/sidenav
@@ -149,6 +153,8 @@ THE SOFTWARE.
 @angular/material/snack-bar
 
 @angular/material/stepper
+
+@angular/material/table
 
 @angular/material/tabs
 
